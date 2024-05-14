@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bk.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+.form{
+    width: 400px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+input,
+.submit-btn{
+
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 7px;
+    background: black;
+    border: none;
+    color: wheat;
+    padding: 15px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+input::placeholder{
+    color: wheat;
+}
+input:focus,
+.submit-btn:hover{
+    background: wheat;
+    color: black;
+}
+input:focus::placeholder{
+    color: black;
+}
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+    opacity: 0;
+}
+.link{
+
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 30px auto;
+    font-weight: 700;
+}
+.link:hover{
+    color: rgb(73, 10, 10);
+}
+.alert-box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(84, 7, 7);
+    border-top: 10px solid wheat;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: wheat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: 1s;
+}
